@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:background="@drawable/edittext_border"
+    android:backgroundTint="@color/white"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/textViewTitleCreateOrUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="6dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editTextNameContact"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewContactNameError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        android:textSize="16sp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number : "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNumberContact"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edittext_border"
+            android:inputType="number"
+            android:maxLength="12"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewContactPhoneNumberError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#F44336"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextEmailContact"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edittext_border"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewContactEmailError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        android:textSize="16sp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender : "
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Will be Generated"
+            android:textColor="#4CAF50"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Choose Contact's birthdate : "
+        android:textSize="16sp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="18dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginStart="6dp">
+
+        <Button
+            android:id="@+id/birthdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Birthdate"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#c4c4c4"/>
+
+        <TextView
+            android:id="@+id/birthdateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/errorMessageBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#F44336"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:backgroundTint="#4CAF50"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:backgroundTint="#F44336"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
